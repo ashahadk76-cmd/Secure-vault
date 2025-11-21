@@ -26,7 +26,7 @@ const About = () => {
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               To empower individuals and businesses with simple, secure, and reliable password management solutions. 
-              We believe everyone deserves to browse the internet without security worries.
+              We believe  Everyone deserves to browse the internet without security worries.
             </p>
           </div>
 
