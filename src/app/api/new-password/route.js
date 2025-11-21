@@ -2,7 +2,7 @@ import securepass from "@/model/securepass";
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import CryptoJS from "crypto-js";
-import connectDB from "@/db/connectDB";
+import connectDB from "@/db/connectDb";
 
 export async function POST(req) {
     try {
