@@ -13,7 +13,7 @@ const About = () => {
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We&pros;re on a mission to make digital security accessible and simple for everyone. 
-            No technical knowledge required - just peace of mind.
+            No technical knowledge required - just peace of mind ask.
           </p>
         </div>
 
