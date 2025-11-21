@@ -1,9 +1,7 @@
-import connectDB from "@/db/connectDB";
 import { NextResponse } from "next/server";
 import securepass from "@/model/securepass";
 import CryptoJS from "crypto-js";
-
-
+import connectDB from "@/db/connectDB";
 
 
 function getidfromreq(req, params) {
