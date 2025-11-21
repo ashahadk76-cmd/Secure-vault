@@ -7,7 +7,11 @@ import { useRouter } from 'next/navigation'
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 
-const Page = () => {
+// Add this import
+import { Suspense } from 'react'
+
+// Main component ko alag bana do
+const AddPasswordForm = () => {
   const [isshow, setIsshow] = useState(false)
   const [loading, setLoading] = useState(false)
   const router = useRouter()
@@ -268,6 +272,29 @@ const Page = () => {
         </div>
       </div>
     </div>
+  )
+}
+
+// Loading component add karo
+const LoadingFallback = () => {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 flex items-center justify-center">
+      <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-200">
+        <div className="flex items-center gap-3">
+          <LoaderCircle className="w-6 h-6 animate-spin text-blue-600" />
+          <p className="text-gray-600">Loading...</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// Main page component jo Suspense me wrapped hai
+const Page = () => {
+  return (
+    <Suspense fallback={<LoadingFallback />}>
+      <AddPasswordForm />
+    </Suspense>
   )
 }
 
