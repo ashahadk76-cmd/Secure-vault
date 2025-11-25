@@ -104,7 +104,7 @@ const Page = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 py-6 md:py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 py-6 md:py-8 px-4 m-27  ">
       <div className="max-w-lg mx-auto">
         
         {/* Back Button */}
