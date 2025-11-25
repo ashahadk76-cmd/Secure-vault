@@ -113,7 +113,7 @@ const Page = () => {
           className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4 md:mb-6 transition-colors duration-200 font-medium text-sm md:text-base"
         >
           <ArrowLeft size={18} className="md:w-5 md:h-5" />
-          Back to Passwords
+          Back To Passwords
         </Link>
 
         {/* Main Card */}
